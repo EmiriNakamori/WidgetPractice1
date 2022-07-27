@@ -6,15 +6,21 @@
 //
 
 import UIKit
+import StoreKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, PurchaseManagerDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        PurchaseManager.shared.delegate = self
+        SKPaymentQueue.default().add(PurchaseManager.shared)
         // Override point for customization after application launch.
         return true
+    }
+    func applicationWillTerminate(_ application: UIApplication) {
+        SKPaymentQueue.default().remove(PurchaseManager.shared)
     }
 
     // MARK: UISceneSession Lifecycle

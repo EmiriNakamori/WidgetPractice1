@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD1D19A82770CF2D006B5C6F /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D19A72770CF2D006B5C6F /* PurchaseManager.swift */; };
+		FD1D19AA2770D0DF006B5C6F /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1D19A92770D0DF006B5C6F /* ProductManager.swift */; };
 		FD3EC082275F34FB00CEF00E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3EC081275F34FB00CEF00E /* AppDelegate.swift */; };
 		FD3EC084275F34FB00CEF00E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3EC083275F34FB00CEF00E /* SceneDelegate.swift */; };
 		FD3EC086275F34FB00CEF00E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3EC085275F34FB00CEF00E /* ViewController.swift */; };
@@ -28,6 +30,7 @@
 		FD3EC0D4275F37C500CEF00E /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3EC0D3275F37C500CEF00E /* widget.swift */; };
 		FD3EC0D6275F37C600CEF00E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3EC0D5275F37C600CEF00E /* Assets.xcassets */; };
 		FD3EC0DA275F37C600CEF00E /* widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD3EC0CF275F37C500CEF00E /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD6D3B4F27686FCA00367FC0 /* BilingPractice.storekit in Resources */ = {isa = PBXBuildFile; fileRef = FD6D3B4E27686FCA00367FC0 /* BilingPractice.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD1D19A72770CF2D006B5C6F /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		FD1D19A92770D0DF006B5C6F /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 		FD3EC07E275F34FB00CEF00E /* WidgetPractice1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetPractice1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3EC081275F34FB00CEF00E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD3EC083275F34FB00CEF00E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 		FD3EC0D3275F37C500CEF00E /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
 		FD3EC0D5275F37C600CEF00E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3EC0D7275F37C600CEF00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6D3B4E27686FCA00367FC0 /* BilingPractice.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = BilingPractice.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,10 +183,13 @@
 				FD3EC081275F34FB00CEF00E /* AppDelegate.swift */,
 				FD3EC083275F34FB00CEF00E /* SceneDelegate.swift */,
 				FD3EC085275F34FB00CEF00E /* ViewController.swift */,
+				FD1D19A72770CF2D006B5C6F /* PurchaseManager.swift */,
+				FD1D19A92770D0DF006B5C6F /* ProductManager.swift */,
 				FD3EC087275F34FB00CEF00E /* Main.storyboard */,
 				FD3EC08A275F34FC00CEF00E /* Assets.xcassets */,
 				FD3EC08C275F34FC00CEF00E /* LaunchScreen.storyboard */,
 				FD3EC08F275F34FC00CEF00E /* Info.plist */,
+				FD6D3B4E27686FCA00367FC0 /* BilingPractice.storekit */,
 			);
 			path = WidgetPractice1;
 			sourceTree = "<group>";
@@ -383,6 +392,7 @@
 			files = (
 				FD3EC08E275F34FC00CEF00E /* LaunchScreen.storyboard in Resources */,
 				FD3EC08B275F34FC00CEF00E /* Assets.xcassets in Resources */,
+				FD6D3B4F27686FCA00367FC0 /* BilingPractice.storekit in Resources */,
 				FD3EC089275F34FB00CEF00E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,9 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD3EC0C3275F358A00CEF00E /* WidgetExtension.intentdefinition in Sources */,
+				FD1D19AA2770D0DF006B5C6F /* ProductManager.swift in Sources */,
 				FD3EC086275F34FB00CEF00E /* ViewController.swift in Sources */,
 				FD3EC082275F34FB00CEF00E /* AppDelegate.swift in Sources */,
 				FD3EC084275F34FB00CEF00E /* SceneDelegate.swift in Sources */,
+				FD1D19A82770CF2D006B5C6F /* PurchaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
